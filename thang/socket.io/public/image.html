@@ -4,17 +4,17 @@
 		<title>Node.js + websocket chat</title>
 		<link type="text/css" href="/css/style.css" rel="stylesheet"></link>
 		<script src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
-		
-		<script src="/js/chat-websocket.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="/js/image.js"></script>
 	</head>
 	<body>
 		<div>
 			<form id="send">
-				<input type="text" id="message">
-				<input type="submit" value="Send">
+				<input type="submit" value="Next">
 			</form>
 		</div>
 		<div id="logs">
+			<img id="img"></img>
 		</div>
 	</body>
 </html>

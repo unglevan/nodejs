@@ -11,11 +11,12 @@ $(function(){
 	});
 	
 	socket.on('message', function(message){
+		// #logs html id="logs"
 		$("<div>").text('> ' + message).prependTo("#logs");
 	});
 	
 	//send action when push on send button
-	
+	// new submit nut send
 	$("#send").submit( function(){
 		if( $("#message").val()){
 			socket.send($("#message").val());
@@ -25,7 +26,7 @@ $(function(){
 		return false;
 	});
 	
-	
+	// clear message input text
 	function clear(){
 		$("#message").val('').focus();
 	}
