@@ -8,7 +8,7 @@ var server = http.createServer(function(req, res){
     
     setTimeout(function(){
 	res.end('World\r\n');
-    }, 2000);
+    }, 20000);
 });
 
 server.listen(8000);
